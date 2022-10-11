@@ -1,0 +1,107 @@
+---
+title: "Report 1, RNA-seq data eye regeneration time course"
+author: "Brenda Pardo"
+date: '2022-10-04'
+output: html_document
+---
+
+
+Analysis in ```maple.sgc.loc/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/code/ExploreDataset.Rmd```
+
+This exploratory analysis aims to evaluate the quality of the data by verifying 
+that the relationships between samples make sense.\
+
+## Log2 read counts per sample
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/counts-boxplot.png){width=60%}\
+**Comments:** All samples, and specifically, replicates within a sample-group 
+show similar expression profiles which is good.\
+
+
+## Distribution of the (log1p-transformed) count data for all samples\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/counts-distrib_per-sample.png){width=60%}\
+**Comments:** Here we are looking for similarity between the sample peeks. We
+want to see that all samples have similar peek dynamic. We don't want to see shifted
+peaks. 
+In our data, the distribution of counts in all samples is similar which is good.
+In the 1dpa samples, the higher counts seem less and the lower more compared to 
+all the other samples. Its not bad but lets keep an eye on that.
+
+## Number of mapped reads per sample (transcripts per million)\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/library-sizes.png){width=60%}\
+**Comments:** From https://support.illumina.com/bulletins/2017/04/considerations-for-rna-seq-read-length-and-coverage-.html. Experiments looking for a more global view of gene expression,
+and some information on alternative splicing, typically require 30–60 million 
+reads per sample. This range encompasses most published RNA-Seq experiments for
+mRNA/whole transcriptome sequencing.
+
+All of our samples have >30 million reads per sample so they are above the 
+acceptable range.
+
+
+# Distances plots\
+We are calculating distances to evaluate similarity between samples. Calculating
+distances must be done in normalized data. *The data was normalized with DESEQ 
+transformation*.\
+
+## Euclidian sample distances
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/euclidean-dist.png){width=60%}\
+**Comments:**\
+- The replicates for each time point group nicely, except for the timepoint 21 
+and 28 which are grouping together.\
+- It makes sense that 1) 1 dpa is very isolated from the rest, 2) 3 and 6 dpa 
+group together, 3) 21 and 28 group together, 4) Intact groups with the more 
+advances timepoints (9 dpa +). The only relationship that caughts my attention 
+is that, according to this plot, 9 and 15 dpa are more similar between them than 
+with 12 dpa. Nevertheless, this looks good to me.\
+
+
+## MDS plot
+### Dimension 1 vs 2
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/mds-dim12.png){width=60%}\
+
+### Dimension 3 vs 4
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/mds-dim34.png){width=60%}\
+
+**Comments:** Dim1 and Dim2 separate nicely the timepoints. There is a clear 
+division between the 1, 3, 6, 9 dpa and intact groups. There is a messy cloud 
+that includes 12, 15, 21 and 28 dpa. Dim 3 and Dim4 are not informative. 
+
+
+## PCA plot
+### Dimension 1 vs 2
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/pca-dim12.png){width=60%}\
+
+### Dimension 3 vs 4
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/pca-dim34.png){width=60%}\
+**Comments:** In the PCA plot, Dim1 and Dim2 also separate nicely the 
+timepoints. There is a clear division between the 1, 3, 6, 12 dpa and intact 
+groups. There is one cloud that groups 9 with 15 and 21 with 28. This agrees with
+the relationships shown in the euclidian distances plot. 
+Dim 3 and Dim4 are not informative. 
+
+
+## Correlation plots\
+### Correlation using all genes\
+#### Spearman correlation\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/correlation-spea.png){width=60%}\
+**Comments:**/
+- Separates nicely the intact eye/
+- 3 and 6 dpa form their one groups but also we see a high correlation between 
+both of them/
+- And then we have the 12, 15, 21, 28 dpa cloud
+
+
+#### Pearson correlation\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/correlation-pear.png){width=60%}\
+**Comments:**/
+- This shows higher correlation between replicates of the same group, altough we 
+see In a same "cloud" 28 and 21 dpa, and 9 and 15 dpa.
+
+### Correlation using top 100 genes with highest mean of expression accross samples\
+#### Spearman correlation\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/correlation_top100-spea.png){width=60%}\
+
+#### Pearson correlation\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/ExploreDataset/pngs/correlation_top100-pear.png){width=60%}\
+**Comments:**  Using 100 genes the Spearman correlation shows higher correlation
+between replicates of same sample. Using Pearson 9, 12, 15, 21 and 28 are higly 
+correlated.
