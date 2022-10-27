@@ -1,0 +1,187 @@
+---
+title: "GO Enrichment Analysis,  RNA-seq data eye regeneration time course, intact"
+author: "Brenda Pardo"
+date: '2022-10-19'
+output: html_document
+---
+
+I ran GO Enrichment Analysis on the DE genes lists produced with the conditional 
+cutoff (using logFC> |2| or logFC><0, depending on the amount of genes obtained
+with these cutoffs)\
+
+## GO Plots\
+
+### Comparisons vs intact\
+
+#### 1dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_1dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_1dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_1dpa-s_intact.txtMF_bar.png){width=100%}\
+
+##### Downregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_1dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_1dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 3dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_3dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_3dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_3dpa-s_intact.txtMF_bar.png){width=100%}\
+
+##### Downregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_3dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_3dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_3dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 6dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_6dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_6dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_6dpa-s_intact.txtMF_bar.png){width=100%}\
+
+##### Downregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_6dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_6dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_6dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 9dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_9dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_9dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_9dpa-s_intact.txtMF_bar.png){width=100%}\
+
+##### Downregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_9dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_9dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_9dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 12dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_12dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_12dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_12dpa-s_intact.txtMF_bar.png){width=100%}\
+
+##### Downregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_12dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_12dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_12dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 15dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_15dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_15dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_15dpa-s_intact.txtMF_bar.png){width=100%}\
+
+
+##### Downregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_15dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_15dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_15dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 21dpa-intact\
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_21dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_21dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_21dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+
+
+#### 28dpa-intact\
+- None
+##### Upregulated\
+###### BP\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_28dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_28dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-up-go_s_28dpa-s_intact.txtMF_bar.png){width=100%}\
+
+##### Downregulated\ 
+###### BP\ 
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_28dpa-s_intact.txtBP_bar.png){width=100%}\
+
+###### CC\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_28dpa-s_intact.txtCC_bar.png){width=100%}\
+
+###### MF\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/GOEnrichment/GOoutput/cond-cutoff/GObar/de-down-go_s_28dpa-s_intact.txtMF_bar.png){width=100%}\
+--
+I think the comparisons intact to each of the regeneration phases is not going to be super useful, since there will be a tendendy to capture as upregulated the proliferation stuff and downregulated the vision stuff
