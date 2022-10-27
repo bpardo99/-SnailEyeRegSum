@@ -1,0 +1,32 @@
+---
+title: "Differential Analysis Exploration, RNA-seq data eye regeneration time course"
+author: "Brenda Pardo"
+date: '2022-10-11'
+output: html_document
+---
+I processed the data in order to perform DE analysis. Additionaly, I performed
+ DE analysis using specific comparisons to evaluate if the number of resultant DE
+ genes made sense. 
+
+# Data processing
+- This step was done with edgeR functions
+- Code can be found in ```maple.sgc.loc/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/code/ExploreDE.Rmd```
+
+## Filter by expression
+I removed genes with small counts as they provide little evidence for differential
+expression. I used default edgeR parameters
+
+## Normalization
+I calculated the factors to normalize the library sizes
+
+## Estimate dispersions
+I estimated common and tagwise gene dispersions 
+
+The rest of the code in ```ExploreDE.Rmd``` are some exploratory Differential
+Expression Analysis. I wanted to look at the results of certain comparisons and 
+evaluate if the number of up regulated and down regulated genes were as expected.
+As an example, we expected more DE genes in the comparison ```intact vs  1 dpa```
+(were 1 dpa is the baseline) than in ```28 dpa vs 21 dpa```. None of these graphs
+are relevant for the analysis. 
+
+The formal DE Analysis can be found in ```maple.sgc.loc/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/code/DEAnalysis.Rmd``` and it is explained in a subsequent vignette.

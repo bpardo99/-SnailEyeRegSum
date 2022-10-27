@@ -1,0 +1,103 @@
+---
+title: "Differential Analysis, RNA-seq data eye regeneration time course"
+author: "Brenda Pardo"
+date: '2022-10-18'
+output: html_document
+---
+Code for this DE analysis can be found at ```maple.sgc.loc/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/code/DEAnalysis.Rmd```.
+
+I performed DE analysis using the edgeR package and its pipeline
+(https://bioconductor.org/packages/release/bioc/html/edgeR.html) 
+
+### Characteristics of the analysis:
+- I computed genewise exact tests and a tagwise dispersion
+- As a cutoff I used adj p-val(FDR) >= 1e-5 and logFC >= |2|
+- I produced MA and Volcano plots
+
+## MA plots
+### With intact eye as a baseline
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_1dpa-s_intact.png){width=60%}\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_3dpa-s_intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_6dpa-s_intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_9dpa-s_intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_12dpa-s_intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_15dpa-s_intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_21dpa-s_intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_28dpa-s_intact.png){width=60%}\
+
+### Paiwise comparisons
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_3dpa-s_1dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_6dpa-s_3dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_9dpa-s_6dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_12dpa-s_9dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_15dpa-s_12dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_21dpa-s_15dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_28dpa-s_21dpa.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/MDplot_s_intact-s_28dpa.png){width=60%}\
+
+## Volcano plots
+
+### With intact eye as a baseline
+3dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_1dpa-s_intact.png){width=60%}\
+6dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_3dpa-s_intact.png){width=60%}\
+6dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_6dpa-s_intact.png){width=60%}\
+9dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_9dpa-s_intact.png){width=60%}\
+12dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_12dpa-s_intact.png){width=60%}\
+15dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_15dpa-s_intact.png){width=60%}\
+21dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_21dpa-s_intact.png){width=60%}\
+28dpa-intact\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_28dpa-s_intact.png){width=60%}\
+
+### Paiwise comparisons
+3dpa-1dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_3dpa-s_1dpa.png){width=60%}\
+6dpa-3dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_6dpa-s_3dpa.png){width=60%}\
+9dpa-6dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_9dpa-s_6dpa.png){width=60%}\
+12dpa-9dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_12dpa-s_9dpa.png){width=60%}\
+15dpa-12dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_15dpa-s_12dpa.png){width=60%}\
+21dpa-15dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_21dpa-s_15dpa.png){width=60%}\
+28dpa-21dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_28dpa-s_21dpa.png){width=60%}\
+intact-28dpa\
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/logFC2-cutoff/png/volcano_s_intact-s_28dpa.png){width=60%}\
+
+## Gene lists
+Can be found at
+```maple.sgc.loc/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/data/tables/DEAnalysis/DEGenes/logFC2-cutoff/de/```
+
+I noticed that the amount of genes obtained with these cutoffs where low in 
+some of the comparisons, so I decided to plot the amount of DE genes along the 
+different comparisons. Code can be found at ```maple.sgc.loc/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/code/PlotDE-ct_logFC2-1e-5.Rmd```.
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/no-de_logFC-2_padj1e-5-intact.png){width=60%}\
+
+![ ](/home/bp2582/projects/eye-reg_rnaseq/github/SnailEyeReg_RNASeq/figures/DEAnalysis/no-de_logFC-2_padj1e-5-pw.png){width=60%}\
+
+
+Given there are comparisons with few DEs I will loose the logFC cuttoff so I can 
+use a bigger list to run GO term.
